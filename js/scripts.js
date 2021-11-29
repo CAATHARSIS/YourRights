@@ -1,8 +1,15 @@
 $('.owl-carousel').owlCarousel({
     center: true,
-    items: 2,
     loop: true,
-    margin: 10
+    margin: 10,
+    responsive: {
+        0: {
+            items: 1
+        },
+        1023: {
+            items: 2
+        }
+    }
 });
 //SCROLL ANIMATION
 const animItems = document.querySelectorAll('._anim-items');

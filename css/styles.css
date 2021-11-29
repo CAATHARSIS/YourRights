@@ -39,6 +39,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-family: "Foxy";
 	src: url("../fonts/Foxy.ttf");
 }
+/*html {
+	overflow: hidden;
+}*/
+.owl-stage {
+	width: 800px;
+}
+.owl-nav .disabled {
+	display: none;
+}
 body {
 	background-color: rgb(250, 235, 216);
 	font-family: "Foxy";
@@ -48,6 +57,21 @@ body {
 .wrapper {
 	max-width: 1080px;
 	margin: 0 auto;
+	padding: 0 5px;
+}
+@media(max-width: 1099px) {
+	.wrapper {
+		max-width: 758px;
+		margin: 0 auto;
+		padding: 0 5px;
+	}
+}
+@media(max-width: 767px) {
+	.wrapper {
+		max-width: 500px;
+		margin: 0 auto;
+		padding: 0 5px;
+	}
 }
 .header__title {
 	padding: 30px 0 20px 0;
@@ -58,6 +82,12 @@ body {
 .header__title._active {
 	transform: translate(0, 0);
 	transition: all 1s cubic-bezier(.2,1,.1,-0.5) 0s;
+}
+@media(max-width: 767px) {
+	.header__title {
+		padding: 20px 0 10px 0;
+		font-size: 32px;
+	}
 }
 .owl-carousel {
 	padding: 50px 0 0 0;
@@ -96,6 +126,23 @@ body {
 	transform: translate(0, 0);
 	transition: all 1s cubic-bezier(.22,.81,.01,.99) 0.2s;
 	opacity: 1;
+}
+@media(max-width: 767px) {
+	.introduction {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.logo {
+		width: 300px;
+		padding: 10px 0 0 0;
+	}
+	.introduction__title {
+		font-size: 28px;
+	}
+	.introduction__text {
+		font-size: 18px;
+	}
 }
 .information {
 	padding: 0 0 20px 0;
