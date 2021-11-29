@@ -35,9 +35,17 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
+@font-face {
+	font-family: "Foxy";
+	src: url("../fonts/Foxy.ttf");
+}
 .title {
 	padding: 100px 0 0 0;
-	font-family: Arial;
+	font-family: "Foxy";
 	font-size: 52px;
 	text-align: center;
+}
+.owl-carousel {
+	max-width: 800px;
+	margin: 0 auto;
 }
