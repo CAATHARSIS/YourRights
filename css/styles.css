@@ -98,9 +98,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	transition: all 1s cubic-bezier(.22,.81,.01,.99) 0.3s;
 }
 .introduction__left._active {
-	transition: all 1s cubic-bezier(.22,.81,.01,.99) 0.3s;
 	transform: translate(0, 0);
 	opacity: 1;
 }
@@ -117,10 +117,10 @@ body {
 .introduction__right {
 	transform: translate(80%, 0);
 	opacity: 0;
+	transition: all 1s cubic-bezier(.22,.81,.01,.99) 0.2s;
 }
 .introduction__right._active {
 	transform: translate(0, 0);
-	transition: all 1s cubic-bezier(.22,.81,.01,.99) 0.2s;
 	opacity: 1;
 }
 @media(max-width: 1099px) {
@@ -178,11 +178,11 @@ body {
 	font-size: 42px;
 	padding: 20px 0 10px 0;
 	transform: translateY(-90%);
+	transition: all 0.5s cubic-bezier(.2,1,.1,-0.5) 0.3s;
 }
 .information__title._active {
 	opacity: 1;
 	transform: translate(0, 0);
-	transition: all 0.5s cubic-bezier(.2,1,.1,-0.5) 0s;
 }
 .information__text {
 	overflow-x: hidden;
@@ -192,20 +192,20 @@ body {
 .par1, .par3 {
 	opacity: 0;
 	transform: translateX(80%);
+	transition: all 1s cubic-bezier(.22,.81,.01,.99) 0.3s;
 }
 .par1._active, .par3._active {
 	opacity: 1;
 	transform: translateX(0);
-	transition: all 1s cubic-bezier(.22,.81,.01,.99) 0.3s;
 }
 .par2 {
 	opacity: 0;
 	transform: translateX(-80%);
+	transition: all 1s cubic-bezier(.22,.81,.01,.99) 0.3s;
 }
 .par2._active {
 	opacity: 1;
 	transform: translateX(0);
-	transition: all 1s cubic-bezier(.22,.81,.01,.99) 0.3s;
 }
 .information__text span {
 	display: inline-block;
